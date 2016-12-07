@@ -32,6 +32,9 @@ open class Note: Comparable {
 
   var _value: Int8?
 
+    var scales: Scales {
+        return Scales(note: self)
+    }
   open var value: Int8 {
     if self._value != nil {
       return self._value!
